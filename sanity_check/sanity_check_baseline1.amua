@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Model>
-    <name>sanity_check_baseline2</name>
+    <name>sanity_check_baseline1</name>
     <type>0</type>
     <Metadata>
         <author>graceguan</author>
         <dateCreated>Thu Oct 29 13:29:03 PDT 2020</dateCreated>
         <versionCreated>0.3.0</versionCreated>
         <modifier>graceguan</modifier>
-        <dateModified>Thu Oct 29 14:35:20 PDT 2020</dateModified>
+        <dateModified>Thu Oct 29 14:49:36 PDT 2020</dateModified>
         <versionModified>0.3.0</versionModified>
     </Metadata>
     <DimInfo>
@@ -90,58 +90,53 @@
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>scale2To1</name>
-        <expression>1.25072/0.57564</expression>
+        <name>scale2</name>
+        <expression>IncidenceEOS/0.57564</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>scale3To1</name>
-        <expression>1.25072/1.09242</expression>
+        <name>scale3</name>
+        <expression>IncidenceEOS/1.09242</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis3ScaledTo1</name>
-        <expression>pSepsis3*scale3To1</expression>
+        <name>pSepsis3Scaled</name>
+        <expression>pSepsis3*scale3</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis2GreenScaledTo1</name>
-        <expression>pSepsis2Green*scale2To1</expression>
+        <name>pSepsis2GreenScaled</name>
+        <expression>pSepsis2Green*scale2</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis2YellowBCPosScaledTo1</name>
-        <expression>pSepsis2YellowBCPos*scale2To1</expression>
+        <name>pSepsis2YellowBCPosScaled</name>
+        <expression>pSepsis2YellowBCPos*scale2</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis2RedScaledTo1</name>
-        <expression>pSepsis2Red*scale2To1</expression>
+        <name>pSepsis2RedScaled</name>
+        <expression>pSepsis2Red*scale2</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>scale1To2</name>
-        <expression>0.57564/1.25072</expression>
+        <name>IncidenceEOS</name>
+        <expression>1.25072</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>scale3To2</name>
-        <expression>0.57564/1.09242</expression>
+        <name>scale1</name>
+        <expression>IncidenceEOS/1.25072</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis3ScaledTo2</name>
-        <expression>pSepsis3*scale3To2</expression>
+        <name>pSepsis1Scaled</name>
+        <expression>pSepsis1*scale1</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
-        <name>pSepsis1ScaledTo2</name>
-        <expression>pSepsis1*scale1To2</expression>
-        <notes></notes>
-    </Parameter>
-    <Parameter>
-        <name>pSepsis1cScaledTo2</name>
-        <expression>pSepsis1c*scale1To2</expression>
+        <name>pSepsis1cScaled</name>
+        <expression>pSepsis1c*scale1</expression>
         <notes></notes>
     </Parameter>
     <simParamSets>false</simParamSets>
@@ -542,7 +537,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis1ScaledTo2</prob>
+            <prob>pSepsis1Scaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
@@ -582,7 +577,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis1cScaledTo2</prob>
+            <prob>pSepsis1cScaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
@@ -622,7 +617,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis2Green</prob>
+            <prob>pSepsis2GreenScaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
@@ -662,7 +657,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis2YellowBCPos</prob>
+            <prob>pSepsis2YellowBCPosScaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
@@ -702,7 +697,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis2Red</prob>
+            <prob>pSepsis2RedScaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
@@ -742,7 +737,7 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <prob>pSepsis3ScaledTo2</prob>
+            <prob>pSepsis3Scaled</prob>
             <cost>0</cost>
             <payoff>0</payoff>
         </Node>
