@@ -7,7 +7,7 @@
         <dateCreated>Thu Oct 29 13:29:03 PDT 2020</dateCreated>
         <versionCreated>0.3.0</versionCreated>
         <modifier>graceguan</modifier>
-        <dateModified>Thu Nov 05 17:19:16 PST 2020</dateModified>
+        <dateModified>Fri Nov 06 15:15:44 PST 2020</dateModified>
         <versionModified>0.3.0</versionModified>
     </Metadata>
     <DimInfo>
@@ -29,11 +29,11 @@
         <baseScenario>Strategy 2</baseScenario>
         <extendedDim>0</extendedDim>
     </DimInfo>
-    <scale>100</scale>
+    <scale>67</scale>
     <alignRight>false</alignRight>
     <Parameter>
         <name>pSepsis1</name>
-        <expression>8/416</expression>
+        <expression>8/(7745*pIllAppearingNoChorio)</expression>
         <notes></notes>
         <sensMin>0.01</sensMin>
         <sensMax>0.025</sensMax>
@@ -396,7 +396,7 @@
     </Parameter>
     <simParamSets>false</simParamSets>
     <simType>0</simType>
-    <cohortSize>4500</cohortSize>
+    <cohortSize>100000</cohortSize>
     <CRN>false</CRN>
     <crnSeed>-1</crnSeed>
     <displayIndResults>false</displayIndResults>
@@ -406,10 +406,10 @@
         <Node>
             <type>0</type>
             <name>Root</name>
-            <xPos>50</xPos>
-            <yPos>2603</yPos>
-            <width>20</width>
-            <height>20</height>
+            <xPos>31</xPos>
+            <yPos>1742</yPos>
+            <width>13</width>
+            <height>13</height>
             <parentX>0</parentX>
             <parentY>0</parentY>
             <parentType>0</parentType>
@@ -428,12 +428,12 @@
         <Node>
             <type>1</type>
             <name>Strategy 1</name>
-            <xPos>235</xPos>
-            <yPos>739</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>70</parentX>
-            <parentY>2613</parentY>
+            <xPos>152</xPos>
+            <yPos>490</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>44</parentX>
+            <parentY>1748</parentY>
             <parentType>0</parentType>
             <childIndices>3</childIndices>
             <childIndices>4</childIndices>
@@ -453,12 +453,12 @@
         <Node>
             <type>1</type>
             <name>Strategy 2</name>
-            <xPos>235</xPos>
-            <yPos>2752</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>70</parentX>
-            <parentY>2613</parentY>
+            <xPos>152</xPos>
+            <yPos>1841</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>44</parentX>
+            <parentY>1748</parentY>
             <parentType>0</parentType>
             <childIndices>7</childIndices>
             <childIndices>8</childIndices>
@@ -479,12 +479,12 @@
         <Node>
             <type>1</type>
             <name>Mom No Chorio &amp; No Fever</name>
-            <xPos>420</xPos>
-            <yPos>298</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>749</parentY>
+            <xPos>276</xPos>
+            <yPos>197</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>496</parentY>
             <parentType>1</parentType>
             <childIndices>5</childIndices>
             <childIndices>6</childIndices>
@@ -504,12 +504,12 @@
         <Node>
             <type>1</type>
             <name>Mom Chorio Or Fever</name>
-            <xPos>420</xPos>
-            <yPos>1180</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>749</parentY>
+            <xPos>276</xPos>
+            <yPos>785</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>496</parentY>
             <parentType>1</parentType>
             <childIndices>16</childIndices>
             <childIndices>17</childIndices>
@@ -529,12 +529,12 @@
         <Node>
             <type>1</type>
             <name>Well-appearing</name>
-            <xPos>605</xPos>
-            <yPos>77</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>308</parentY>
+            <xPos>402</xPos>
+            <yPos>48</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>203</parentY>
             <parentType>1</parentType>
             <childIndices>24</childIndices>
             <level>3</level>
@@ -553,12 +553,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing</name>
-            <xPos>605</xPos>
-            <yPos>520</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>308</parentY>
+            <xPos>402</xPos>
+            <yPos>343</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>203</parentY>
             <parentType>1</parentType>
             <childIndices>14</childIndices>
             <childIndices>15</childIndices>
@@ -578,12 +578,12 @@
         <Node>
             <type>1</type>
             <name>"Green" NSC Risk</name>
-            <xPos>420</xPos>
-            <yPos>1858</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>2762</parentY>
+            <xPos>276</xPos>
+            <yPos>1239</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>1847</parentY>
             <parentType>1</parentType>
             <childIndices>10</childIndices>
             <childIndices>11</childIndices>
@@ -603,12 +603,12 @@
         <Node>
             <type>1</type>
             <name>"Yellow" NSC Risk</name>
-            <xPos>420</xPos>
-            <yPos>2758</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>2762</parentY>
+            <xPos>276</xPos>
+            <yPos>1842</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>1847</parentY>
             <parentType>1</parentType>
             <childIndices>12</childIndices>
             <childIndices>13</childIndices>
@@ -628,12 +628,12 @@
         <Node>
             <type>1</type>
             <name>"Red" NSC Risk</name>
-            <xPos>420</xPos>
-            <yPos>3640</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>2762</parentY>
+            <xPos>276</xPos>
+            <yPos>2434</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>1847</parentY>
             <parentType>1</parentType>
             <childIndices>22</childIndices>
             <childIndices>23</childIndices>
@@ -653,12 +653,12 @@
         <Node>
             <type>1</type>
             <name>Well-appearing</name>
-            <xPos>605</xPos>
-            <yPos>1637</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>1868</parentY>
+            <xPos>402</xPos>
+            <yPos>1091</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>1245</parentY>
             <parentType>1</parentType>
             <childIndices>82</childIndices>
             <level>3</level>
@@ -677,12 +677,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing</name>
-            <xPos>605</xPos>
-            <yPos>2080</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>1868</parentY>
+            <xPos>402</xPos>
+            <yPos>1388</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>1245</parentY>
             <parentType>1</parentType>
             <childIndices>18</childIndices>
             <childIndices>19</childIndices>
@@ -702,12 +702,12 @@
         <Node>
             <type>1</type>
             <name>Well-appearing &amp; BC-</name>
-            <xPos>605</xPos>
-            <yPos>2537</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>2768</parentY>
+            <xPos>402</xPos>
+            <yPos>1694</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>1848</parentY>
             <parentType>1</parentType>
             <childIndices>89</childIndices>
             <level>3</level>
@@ -726,12 +726,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing Or BC+</name>
-            <xPos>605</xPos>
-            <yPos>2980</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>2768</parentY>
+            <xPos>402</xPos>
+            <yPos>1991</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>1848</parentY>
             <parentType>1</parentType>
             <childIndices>20</childIndices>
             <childIndices>21</childIndices>
@@ -751,12 +751,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>790</xPos>
-            <yPos>340</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>530</parentY>
+            <xPos>525</xPos>
+            <yPos>223</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>349</parentY>
             <parentType>1</parentType>
             <childIndices>32</childIndices>
             <level>4</level>
@@ -775,12 +775,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>790</xPos>
-            <yPos>700</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>530</parentY>
+            <xPos>525</xPos>
+            <yPos>469</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>349</parentY>
             <parentType>1</parentType>
             <childIndices>25</childIndices>
             <level>4</level>
@@ -799,12 +799,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>605</xPos>
-            <yPos>1000</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>1190</parentY>
+            <xPos>402</xPos>
+            <yPos>670</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>791</parentY>
             <parentType>1</parentType>
             <childIndices>50</childIndices>
             <level>3</level>
@@ -823,12 +823,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>605</xPos>
-            <yPos>1360</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>1190</parentY>
+            <xPos>402</xPos>
+            <yPos>906</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>791</parentY>
             <parentType>1</parentType>
             <childIndices>96</childIndices>
             <level>3</level>
@@ -847,12 +847,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>790</xPos>
-            <yPos>1900</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>2090</parentY>
+            <xPos>525</xPos>
+            <yPos>1273</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1394</parentY>
             <parentType>1</parentType>
             <childIndices>58</childIndices>
             <level>4</level>
@@ -871,12 +871,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>790</xPos>
-            <yPos>2260</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>2090</parentY>
+            <xPos>525</xPos>
+            <yPos>1509</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1394</parentY>
             <parentType>1</parentType>
             <childIndices>107</childIndices>
             <level>4</level>
@@ -895,12 +895,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>790</xPos>
-            <yPos>2800</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>2990</parentY>
+            <xPos>525</xPos>
+            <yPos>1876</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1997</parentY>
             <parentType>1</parentType>
             <childIndices>66</childIndices>
             <level>4</level>
@@ -919,12 +919,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>790</xPos>
-            <yPos>3160</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>2990</parentY>
+            <xPos>525</xPos>
+            <yPos>2112</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1997</parentY>
             <parentType>1</parentType>
             <childIndices>118</childIndices>
             <level>4</level>
@@ -943,12 +943,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>605</xPos>
-            <yPos>3460</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>3650</parentY>
+            <xPos>402</xPos>
+            <yPos>2313</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>2440</parentY>
             <parentType>1</parentType>
             <childIndices>74</childIndices>
             <level>3</level>
@@ -967,12 +967,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>605</xPos>
-            <yPos>3820</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>3650</parentY>
+            <xPos>402</xPos>
+            <yPos>2554</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>2440</parentY>
             <parentType>1</parentType>
             <childIndices>129</childIndices>
             <level>3</level>
@@ -991,12 +991,12 @@
         <Node>
             <type>1</type>
             <name>Discharge Pathway</name>
-            <xPos>790</xPos>
-            <yPos>77</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>87</parentY>
+            <xPos>525</xPos>
+            <yPos>48</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>54</parentY>
             <parentType>1</parentType>
             <childIndices>26</childIndices>
             <childIndices>27</childIndices>
@@ -1016,12 +1016,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>975</xPos>
-            <yPos>700</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>710</parentY>
+            <xPos>650</xPos>
+            <yPos>469</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>475</parentY>
             <parentType>1</parentType>
             <childIndices>40</childIndices>
             <childIndices>41</childIndices>
@@ -1041,12 +1041,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>25</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>87</parentY>
+            <xPos>650</xPos>
+            <yPos>13</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>54</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -1064,12 +1064,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>130</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>87</parentY>
+            <xPos>650</xPos>
+            <yPos>82</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>54</parentY>
             <parentType>1</parentType>
             <childIndices>28</childIndices>
             <childIndices>29</childIndices>
@@ -1089,12 +1089,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>85</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>140</parentY>
+            <xPos>772</xPos>
+            <yPos>52</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>88</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1112,12 +1112,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>175</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>140</parentY>
+            <xPos>772</xPos>
+            <yPos>114</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>88</parentY>
             <parentType>1</parentType>
             <childIndices>30</childIndices>
             <childIndices>31</childIndices>
@@ -1137,12 +1137,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>145</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>185</parentY>
+            <xPos>897</xPos>
+            <yPos>93</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>120</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1160,12 +1160,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>205</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>185</parentY>
+            <xPos>897</xPos>
+            <yPos>134</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>120</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1183,12 +1183,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>975</xPos>
-            <yPos>340</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>350</parentY>
+            <xPos>650</xPos>
+            <yPos>223</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>229</parentY>
             <parentType>1</parentType>
             <childIndices>33</childIndices>
             <childIndices>34</childIndices>
@@ -1209,12 +1209,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1160</xPos>
-            <yPos>265</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>350</parentY>
+            <xPos>772</xPos>
+            <yPos>173</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>229</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1232,12 +1232,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1160</xPos>
-            <yPos>325</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>350</parentY>
+            <xPos>772</xPos>
+            <yPos>214</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>229</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1255,12 +1255,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>1160</xPos>
-            <yPos>430</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>350</parentY>
+            <xPos>772</xPos>
+            <yPos>283</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>229</parentY>
             <parentType>1</parentType>
             <childIndices>36</childIndices>
             <childIndices>37</childIndices>
@@ -1280,12 +1280,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>385</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>440</parentY>
+            <xPos>897</xPos>
+            <yPos>253</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>289</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1303,12 +1303,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>475</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>440</parentY>
+            <xPos>897</xPos>
+            <yPos>315</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>289</parentY>
             <parentType>1</parentType>
             <childIndices>38</childIndices>
             <childIndices>39</childIndices>
@@ -1328,12 +1328,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>445</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>485</parentY>
+            <xPos>1020</xPos>
+            <yPos>294</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>321</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1351,12 +1351,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>505</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>485</parentY>
+            <xPos>1020</xPos>
+            <yPos>335</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>321</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1374,12 +1374,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>1160</xPos>
-            <yPos>610</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>710</parentY>
+            <xPos>772</xPos>
+            <yPos>403</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>475</parentY>
             <parentType>1</parentType>
             <childIndices>42</childIndices>
             <childIndices>43</childIndices>
@@ -1399,12 +1399,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>1160</xPos>
-            <yPos>790</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>710</parentY>
+            <xPos>772</xPos>
+            <yPos>525</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>475</parentY>
             <parentType>1</parentType>
             <childIndices>44</childIndices>
             <childIndices>45</childIndices>
@@ -1424,12 +1424,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>565</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>620</parentY>
+            <xPos>897</xPos>
+            <yPos>374</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>409</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1447,12 +1447,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>655</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>620</parentY>
+            <xPos>897</xPos>
+            <yPos>434</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>409</parentY>
             <parentType>1</parentType>
             <childIndices>46</childIndices>
             <childIndices>47</childIndices>
@@ -1472,12 +1472,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>745</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>800</parentY>
+            <xPos>897</xPos>
+            <yPos>495</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>531</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1495,12 +1495,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>835</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>800</parentY>
+            <xPos>897</xPos>
+            <yPos>554</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>531</parentY>
             <parentType>1</parentType>
             <childIndices>48</childIndices>
             <childIndices>49</childIndices>
@@ -1520,12 +1520,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>625</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>665</parentY>
+            <xPos>1020</xPos>
+            <yPos>415</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>440</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1543,12 +1543,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1530</xPos>
-            <yPos>685</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>665</parentY>
+            <xPos>1020</xPos>
+            <yPos>454</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>440</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1566,12 +1566,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1530</xPos>
-            <yPos>805</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>845</parentY>
+            <xPos>1020</xPos>
+            <yPos>536</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>560</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1589,12 +1589,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>865</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>845</parentY>
+            <xPos>1020</xPos>
+            <yPos>575</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>560</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1612,12 +1612,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>790</xPos>
-            <yPos>1000</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>1010</parentY>
+            <xPos>525</xPos>
+            <yPos>670</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>676</parentY>
             <parentType>1</parentType>
             <childIndices>51</childIndices>
             <childIndices>52</childIndices>
@@ -1638,12 +1638,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>925</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1010</parentY>
+            <xPos>650</xPos>
+            <yPos>616</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>676</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -1661,12 +1661,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>975</xPos>
-            <yPos>985</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1010</parentY>
+            <xPos>650</xPos>
+            <yPos>655</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>676</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -1684,12 +1684,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>1090</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1010</parentY>
+            <xPos>650</xPos>
+            <yPos>726</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>676</parentY>
             <parentType>1</parentType>
             <childIndices>54</childIndices>
             <childIndices>55</childIndices>
@@ -1709,12 +1709,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>1045</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1100</parentY>
+            <xPos>772</xPos>
+            <yPos>696</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>732</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1732,12 +1732,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>1135</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1100</parentY>
+            <xPos>772</xPos>
+            <yPos>755</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>732</parentY>
             <parentType>1</parentType>
             <childIndices>56</childIndices>
             <childIndices>57</childIndices>
@@ -1757,12 +1757,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>1105</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1145</parentY>
+            <xPos>897</xPos>
+            <yPos>737</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>761</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1780,12 +1780,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>1165</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1145</parentY>
+            <xPos>897</xPos>
+            <yPos>776</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>761</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1803,12 +1803,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>975</xPos>
-            <yPos>1900</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1910</parentY>
+            <xPos>650</xPos>
+            <yPos>1273</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1279</parentY>
             <parentType>1</parentType>
             <childIndices>59</childIndices>
             <childIndices>60</childIndices>
@@ -1829,12 +1829,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1160</xPos>
-            <yPos>1825</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1910</parentY>
+            <xPos>772</xPos>
+            <yPos>1219</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1279</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1852,12 +1852,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1160</xPos>
-            <yPos>1885</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1910</parentY>
+            <xPos>772</xPos>
+            <yPos>1258</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1279</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -1875,12 +1875,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>1160</xPos>
-            <yPos>1990</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1910</parentY>
+            <xPos>772</xPos>
+            <yPos>1329</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1279</parentY>
             <parentType>1</parentType>
             <childIndices>62</childIndices>
             <childIndices>63</childIndices>
@@ -1900,12 +1900,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>1945</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2000</parentY>
+            <xPos>897</xPos>
+            <yPos>1299</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1335</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -1923,12 +1923,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>2035</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2000</parentY>
+            <xPos>897</xPos>
+            <yPos>1358</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1335</parentY>
             <parentType>1</parentType>
             <childIndices>64</childIndices>
             <childIndices>65</childIndices>
@@ -1948,12 +1948,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>2005</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2045</parentY>
+            <xPos>1020</xPos>
+            <yPos>1340</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1364</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1971,12 +1971,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>2065</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2045</parentY>
+            <xPos>1020</xPos>
+            <yPos>1379</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1364</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -1994,12 +1994,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>975</xPos>
-            <yPos>2800</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>2810</parentY>
+            <xPos>650</xPos>
+            <yPos>1876</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1882</parentY>
             <parentType>1</parentType>
             <childIndices>67</childIndices>
             <childIndices>68</childIndices>
@@ -2020,12 +2020,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1160</xPos>
-            <yPos>2725</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2810</parentY>
+            <xPos>772</xPos>
+            <yPos>1822</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1882</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2043,12 +2043,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1160</xPos>
-            <yPos>2785</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2810</parentY>
+            <xPos>772</xPos>
+            <yPos>1861</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1882</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2066,12 +2066,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>1160</xPos>
-            <yPos>2890</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2810</parentY>
+            <xPos>772</xPos>
+            <yPos>1932</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1882</parentY>
             <parentType>1</parentType>
             <childIndices>70</childIndices>
             <childIndices>71</childIndices>
@@ -2091,12 +2091,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>2845</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2900</parentY>
+            <xPos>897</xPos>
+            <yPos>1902</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1938</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2114,12 +2114,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>2935</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2900</parentY>
+            <xPos>897</xPos>
+            <yPos>1961</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1938</parentY>
             <parentType>1</parentType>
             <childIndices>72</childIndices>
             <childIndices>73</childIndices>
@@ -2139,12 +2139,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>2905</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2945</parentY>
+            <xPos>1020</xPos>
+            <yPos>1943</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1967</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -2162,12 +2162,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>2965</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2945</parentY>
+            <xPos>1020</xPos>
+            <yPos>1982</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1967</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -2185,12 +2185,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>790</xPos>
-            <yPos>3460</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>3470</parentY>
+            <xPos>525</xPos>
+            <yPos>2313</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>2319</parentY>
             <parentType>1</parentType>
             <childIndices>75</childIndices>
             <childIndices>76</childIndices>
@@ -2211,12 +2211,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>3385</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3470</parentY>
+            <xPos>650</xPos>
+            <yPos>2263</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2319</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -2234,12 +2234,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>975</xPos>
-            <yPos>3445</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3470</parentY>
+            <xPos>650</xPos>
+            <yPos>2304</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2319</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -2257,12 +2257,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>3550</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3470</parentY>
+            <xPos>650</xPos>
+            <yPos>2376</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2319</parentY>
             <parentType>1</parentType>
             <childIndices>78</childIndices>
             <childIndices>79</childIndices>
@@ -2282,12 +2282,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>3505</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3560</parentY>
+            <xPos>772</xPos>
+            <yPos>2345</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2382</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2305,12 +2305,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>3595</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3560</parentY>
+            <xPos>772</xPos>
+            <yPos>2405</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2382</parentY>
             <parentType>1</parentType>
             <childIndices>80</childIndices>
             <childIndices>81</childIndices>
@@ -2330,12 +2330,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>3565</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3605</parentY>
+            <xPos>897</xPos>
+            <yPos>2384</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2411</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2353,12 +2353,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>3625</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3605</parentY>
+            <xPos>897</xPos>
+            <yPos>2425</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2411</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2376,12 +2376,12 @@
         <Node>
             <type>1</type>
             <name>Discharge Pathway</name>
-            <xPos>790</xPos>
-            <yPos>1637</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>1647</parentY>
+            <xPos>525</xPos>
+            <yPos>1091</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1097</parentY>
             <parentType>1</parentType>
             <childIndices>83</childIndices>
             <childIndices>84</childIndices>
@@ -2401,12 +2401,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>1585</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1647</parentY>
+            <xPos>650</xPos>
+            <yPos>1057</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1097</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -2424,12 +2424,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>1690</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1647</parentY>
+            <xPos>650</xPos>
+            <yPos>1128</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1097</parentY>
             <parentType>1</parentType>
             <childIndices>85</childIndices>
             <childIndices>86</childIndices>
@@ -2449,12 +2449,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>1645</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1700</parentY>
+            <xPos>772</xPos>
+            <yPos>1098</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1134</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2472,12 +2472,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>1735</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1700</parentY>
+            <xPos>772</xPos>
+            <yPos>1157</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1134</parentY>
             <parentType>1</parentType>
             <childIndices>87</childIndices>
             <childIndices>88</childIndices>
@@ -2497,12 +2497,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>1705</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1745</parentY>
+            <xPos>897</xPos>
+            <yPos>1139</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1163</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2520,12 +2520,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>1765</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1745</parentY>
+            <xPos>897</xPos>
+            <yPos>1178</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1163</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2543,12 +2543,12 @@
         <Node>
             <type>1</type>
             <name>Discharge Pathway</name>
-            <xPos>790</xPos>
-            <yPos>2537</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>2547</parentY>
+            <xPos>525</xPos>
+            <yPos>1694</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>1700</parentY>
             <parentType>1</parentType>
             <childIndices>90</childIndices>
             <childIndices>91</childIndices>
@@ -2568,12 +2568,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>2485</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>2547</parentY>
+            <xPos>650</xPos>
+            <yPos>1660</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1700</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -2591,12 +2591,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>2590</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>2547</parentY>
+            <xPos>650</xPos>
+            <yPos>1731</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1700</parentY>
             <parentType>1</parentType>
             <childIndices>92</childIndices>
             <childIndices>93</childIndices>
@@ -2616,12 +2616,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>2545</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2600</parentY>
+            <xPos>772</xPos>
+            <yPos>1701</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1737</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2639,12 +2639,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>2635</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2600</parentY>
+            <xPos>772</xPos>
+            <yPos>1760</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1737</parentY>
             <parentType>1</parentType>
             <childIndices>94</childIndices>
             <childIndices>95</childIndices>
@@ -2664,12 +2664,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>2605</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2645</parentY>
+            <xPos>897</xPos>
+            <yPos>1742</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1766</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2687,12 +2687,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>2665</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2645</parentY>
+            <xPos>897</xPos>
+            <yPos>1781</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1766</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2710,12 +2710,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>790</xPos>
-            <yPos>1360</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>1370</parentY>
+            <xPos>525</xPos>
+            <yPos>906</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>912</parentY>
             <parentType>1</parentType>
             <childIndices>97</childIndices>
             <childIndices>102</childIndices>
@@ -2735,12 +2735,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>975</xPos>
-            <yPos>1270</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1370</parentY>
+            <xPos>650</xPos>
+            <yPos>846</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>912</parentY>
             <parentType>1</parentType>
             <childIndices>98</childIndices>
             <childIndices>99</childIndices>
@@ -2760,12 +2760,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>1225</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1280</parentY>
+            <xPos>772</xPos>
+            <yPos>817</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>852</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2783,12 +2783,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>1315</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1280</parentY>
+            <xPos>772</xPos>
+            <yPos>877</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>852</parentY>
             <parentType>1</parentType>
             <childIndices>100</childIndices>
             <childIndices>101</childIndices>
@@ -2808,12 +2808,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>1285</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1325</parentY>
+            <xPos>897</xPos>
+            <yPos>856</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>883</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2831,12 +2831,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1345</xPos>
-            <yPos>1345</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1325</parentY>
+            <xPos>897</xPos>
+            <yPos>897</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>883</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2854,12 +2854,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>975</xPos>
-            <yPos>1450</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>1370</parentY>
+            <xPos>650</xPos>
+            <yPos>969</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>912</parentY>
             <parentType>1</parentType>
             <childIndices>103</childIndices>
             <childIndices>104</childIndices>
@@ -2879,12 +2879,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>1405</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1460</parentY>
+            <xPos>772</xPos>
+            <yPos>938</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>975</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -2902,12 +2902,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>1495</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>1460</parentY>
+            <xPos>772</xPos>
+            <yPos>998</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>975</parentY>
             <parentType>1</parentType>
             <childIndices>105</childIndices>
             <childIndices>106</childIndices>
@@ -2927,12 +2927,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1345</xPos>
-            <yPos>1465</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1505</parentY>
+            <xPos>897</xPos>
+            <yPos>977</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1004</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2950,12 +2950,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>1525</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>1505</parentY>
+            <xPos>897</xPos>
+            <yPos>1018</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1004</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -2973,12 +2973,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>975</xPos>
-            <yPos>2260</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>2270</parentY>
+            <xPos>650</xPos>
+            <yPos>1509</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>1515</parentY>
             <parentType>1</parentType>
             <childIndices>108</childIndices>
             <childIndices>113</childIndices>
@@ -2998,12 +2998,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>1160</xPos>
-            <yPos>2170</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2270</parentY>
+            <xPos>772</xPos>
+            <yPos>1449</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1515</parentY>
             <parentType>1</parentType>
             <childIndices>109</childIndices>
             <childIndices>110</childIndices>
@@ -3023,12 +3023,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>2125</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2180</parentY>
+            <xPos>897</xPos>
+            <yPos>1420</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1455</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3046,12 +3046,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>2215</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2180</parentY>
+            <xPos>897</xPos>
+            <yPos>1480</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1455</parentY>
             <parentType>1</parentType>
             <childIndices>111</childIndices>
             <childIndices>112</childIndices>
@@ -3071,12 +3071,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>2185</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2225</parentY>
+            <xPos>1020</xPos>
+            <yPos>1459</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1486</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3094,12 +3094,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1530</xPos>
-            <yPos>2245</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2225</parentY>
+            <xPos>1020</xPos>
+            <yPos>1500</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1486</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3117,12 +3117,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>1160</xPos>
-            <yPos>2350</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>2270</parentY>
+            <xPos>772</xPos>
+            <yPos>1572</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>1515</parentY>
             <parentType>1</parentType>
             <childIndices>114</childIndices>
             <childIndices>115</childIndices>
@@ -3142,12 +3142,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>2305</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2360</parentY>
+            <xPos>897</xPos>
+            <yPos>1541</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1578</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3165,12 +3165,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>2395</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>2360</parentY>
+            <xPos>897</xPos>
+            <yPos>1601</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>1578</parentY>
             <parentType>1</parentType>
             <childIndices>116</childIndices>
             <childIndices>117</childIndices>
@@ -3190,12 +3190,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1530</xPos>
-            <yPos>2365</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2405</parentY>
+            <xPos>1020</xPos>
+            <yPos>1580</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1607</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3213,12 +3213,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>2425</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>2405</parentY>
+            <xPos>1020</xPos>
+            <yPos>1621</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>1607</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3236,12 +3236,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>975</xPos>
-            <yPos>3160</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3170</parentY>
+            <xPos>650</xPos>
+            <yPos>2112</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2118</parentY>
             <parentType>1</parentType>
             <childIndices>119</childIndices>
             <childIndices>124</childIndices>
@@ -3261,12 +3261,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>1160</xPos>
-            <yPos>3070</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3170</parentY>
+            <xPos>772</xPos>
+            <yPos>2052</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2118</parentY>
             <parentType>1</parentType>
             <childIndices>120</childIndices>
             <childIndices>121</childIndices>
@@ -3286,12 +3286,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>3025</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3080</parentY>
+            <xPos>897</xPos>
+            <yPos>2023</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2058</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3309,12 +3309,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>3115</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3080</parentY>
+            <xPos>897</xPos>
+            <yPos>2083</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2058</parentY>
             <parentType>1</parentType>
             <childIndices>122</childIndices>
             <childIndices>123</childIndices>
@@ -3334,12 +3334,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1530</xPos>
-            <yPos>3085</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>3125</parentY>
+            <xPos>1020</xPos>
+            <yPos>2062</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>2089</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3357,12 +3357,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1530</xPos>
-            <yPos>3145</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>3125</parentY>
+            <xPos>1020</xPos>
+            <yPos>2103</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>2089</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3380,12 +3380,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>1160</xPos>
-            <yPos>3250</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3170</parentY>
+            <xPos>772</xPos>
+            <yPos>2175</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2118</parentY>
             <parentType>1</parentType>
             <childIndices>125</childIndices>
             <childIndices>126</childIndices>
@@ -3405,12 +3405,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1345</xPos>
-            <yPos>3205</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3260</parentY>
+            <xPos>897</xPos>
+            <yPos>2144</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2181</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3428,12 +3428,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1345</xPos>
-            <yPos>3295</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3260</parentY>
+            <xPos>897</xPos>
+            <yPos>2204</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2181</parentY>
             <parentType>1</parentType>
             <childIndices>127</childIndices>
             <childIndices>128</childIndices>
@@ -3453,12 +3453,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1530</xPos>
-            <yPos>3265</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>3305</parentY>
+            <xPos>1020</xPos>
+            <yPos>2183</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>2210</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3476,12 +3476,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1530</xPos>
-            <yPos>3325</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1365</parentX>
-            <parentY>3305</parentY>
+            <xPos>1020</xPos>
+            <yPos>2224</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>910</parentX>
+            <parentY>2210</parentY>
             <parentType>1</parentType>
             <level>8</level>
             <hasCost>false</hasCost>
@@ -3499,12 +3499,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>790</xPos>
-            <yPos>3820</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>3830</parentY>
+            <xPos>525</xPos>
+            <yPos>2554</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>2560</parentY>
             <parentType>1</parentType>
             <childIndices>130</childIndices>
             <childIndices>135</childIndices>
@@ -3524,12 +3524,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>975</xPos>
-            <yPos>3730</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3830</parentY>
+            <xPos>650</xPos>
+            <yPos>2494</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2560</parentY>
             <parentType>1</parentType>
             <childIndices>131</childIndices>
             <childIndices>132</childIndices>
@@ -3549,12 +3549,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>3685</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3740</parentY>
+            <xPos>772</xPos>
+            <yPos>2464</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2500</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -3572,12 +3572,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>3775</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3740</parentY>
+            <xPos>772</xPos>
+            <yPos>2526</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2500</parentY>
             <parentType>1</parentType>
             <childIndices>133</childIndices>
             <childIndices>134</childIndices>
@@ -3597,12 +3597,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>3745</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3785</parentY>
+            <xPos>897</xPos>
+            <yPos>2505</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2532</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3620,12 +3620,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1345</xPos>
-            <yPos>3805</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3785</parentY>
+            <xPos>897</xPos>
+            <yPos>2546</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2532</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3643,12 +3643,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>975</xPos>
-            <yPos>3910</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>3830</parentY>
+            <xPos>650</xPos>
+            <yPos>2614</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2560</parentY>
             <parentType>1</parentType>
             <childIndices>136</childIndices>
             <childIndices>137</childIndices>
@@ -3668,12 +3668,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>3865</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3920</parentY>
+            <xPos>772</xPos>
+            <yPos>2585</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2620</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -3691,12 +3691,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>3955</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>3920</parentY>
+            <xPos>772</xPos>
+            <yPos>2645</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2620</parentY>
             <parentType>1</parentType>
             <childIndices>138</childIndices>
             <childIndices>139</childIndices>
@@ -3716,12 +3716,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1345</xPos>
-            <yPos>3925</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3965</parentY>
+            <xPos>897</xPos>
+            <yPos>2626</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2651</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3739,12 +3739,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>3985</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>3965</parentY>
+            <xPos>897</xPos>
+            <yPos>2665</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>2651</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -3762,12 +3762,12 @@
         <Node>
             <type>1</type>
             <name>Strategy 3</name>
-            <xPos>235</xPos>
-            <yPos>4318</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>70</parentX>
-            <parentY>2613</parentY>
+            <xPos>152</xPos>
+            <yPos>2889</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>44</parentX>
+            <parentY>1748</parentY>
             <parentType>0</parentType>
             <childIndices>141</childIndices>
             <childIndices>149</childIndices>
@@ -3787,12 +3787,12 @@
         <Node>
             <type>1</type>
             <name>Well-appearing</name>
-            <xPos>420</xPos>
-            <yPos>4097</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>4328</parentY>
+            <xPos>276</xPos>
+            <yPos>2742</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>2895</parentY>
             <parentType>1</parentType>
             <childIndices>142</childIndices>
             <level>2</level>
@@ -3811,12 +3811,12 @@
         <Node>
             <type>1</type>
             <name>Discharge Pathway</name>
-            <xPos>605</xPos>
-            <yPos>4097</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>4107</parentY>
+            <xPos>402</xPos>
+            <yPos>2742</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>2748</parentY>
             <parentType>1</parentType>
             <childIndices>143</childIndices>
             <childIndices>144</childIndices>
@@ -3836,12 +3836,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>790</xPos>
-            <yPos>4045</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>4107</parentY>
+            <xPos>525</xPos>
+            <yPos>2706</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>2748</parentY>
             <parentType>1</parentType>
             <level>4</level>
             <hasCost>false</hasCost>
@@ -3859,12 +3859,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>790</xPos>
-            <yPos>4150</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>4107</parentY>
+            <xPos>525</xPos>
+            <yPos>2778</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>2748</parentY>
             <parentType>1</parentType>
             <childIndices>145</childIndices>
             <childIndices>146</childIndices>
@@ -3884,12 +3884,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>975</xPos>
-            <yPos>4105</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4160</parentY>
+            <xPos>650</xPos>
+            <yPos>2747</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2784</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -3907,12 +3907,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>975</xPos>
-            <yPos>4195</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4160</parentY>
+            <xPos>650</xPos>
+            <yPos>2807</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2784</parentY>
             <parentType>1</parentType>
             <childIndices>147</childIndices>
             <childIndices>148</childIndices>
@@ -3932,12 +3932,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1160</xPos>
-            <yPos>4165</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4205</parentY>
+            <xPos>772</xPos>
+            <yPos>2786</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2813</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -3955,12 +3955,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1160</xPos>
-            <yPos>4225</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4205</parentY>
+            <xPos>772</xPos>
+            <yPos>2827</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2813</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -3978,12 +3978,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing</name>
-            <xPos>420</xPos>
-            <yPos>4540</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>255</parentX>
-            <parentY>4328</parentY>
+            <xPos>276</xPos>
+            <yPos>3037</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>165</parentX>
+            <parentY>2895</parentY>
             <parentType>1</parentType>
             <childIndices>150</childIndices>
             <childIndices>159</childIndices>
@@ -4003,12 +4003,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out</name>
-            <xPos>605</xPos>
-            <yPos>4360</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>4550</parentY>
+            <xPos>402</xPos>
+            <yPos>2916</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>3043</parentY>
             <parentType>1</parentType>
             <childIndices>151</childIndices>
             <level>3</level>
@@ -4027,12 +4027,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Ruled Out Pathway</name>
-            <xPos>790</xPos>
-            <yPos>4360</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>4370</parentY>
+            <xPos>525</xPos>
+            <yPos>2916</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>2922</parentY>
             <parentType>1</parentType>
             <childIndices>152</childIndices>
             <childIndices>153</childIndices>
@@ -4053,12 +4053,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>975</xPos>
-            <yPos>4285</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4370</parentY>
+            <xPos>650</xPos>
+            <yPos>2866</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2922</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -4076,12 +4076,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>975</xPos>
-            <yPos>4345</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4370</parentY>
+            <xPos>650</xPos>
+            <yPos>2907</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2922</parentY>
             <parentType>1</parentType>
             <level>5</level>
             <hasCost>false</hasCost>
@@ -4099,12 +4099,12 @@
         <Node>
             <type>1</type>
             <name>Readmitted w/in 7d</name>
-            <xPos>975</xPos>
-            <yPos>4450</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4370</parentY>
+            <xPos>650</xPos>
+            <yPos>2979</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>2922</parentY>
             <parentType>1</parentType>
             <childIndices>155</childIndices>
             <childIndices>156</childIndices>
@@ -4124,12 +4124,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>4405</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4460</parentY>
+            <xPos>772</xPos>
+            <yPos>2948</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2985</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -4147,12 +4147,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>4495</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4460</parentY>
+            <xPos>772</xPos>
+            <yPos>3008</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>2985</parentY>
             <parentType>1</parentType>
             <childIndices>157</childIndices>
             <childIndices>158</childIndices>
@@ -4172,12 +4172,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>4465</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4505</parentY>
+            <xPos>897</xPos>
+            <yPos>2987</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3014</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -4195,12 +4195,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>4525</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4505</parentY>
+            <xPos>897</xPos>
+            <yPos>3028</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3014</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -4218,12 +4218,12 @@
         <Node>
             <type>1</type>
             <name>Ill-appearing or CBCd+</name>
-            <xPos>605</xPos>
-            <yPos>4720</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>440</parentX>
-            <parentY>4550</parentY>
+            <xPos>402</xPos>
+            <yPos>3157</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>289</parentX>
+            <parentY>3043</parentY>
             <parentType>1</parentType>
             <childIndices>160</childIndices>
             <level>3</level>
@@ -4242,12 +4242,12 @@
         <Node>
             <type>1</type>
             <name>Sepsis Pathway</name>
-            <xPos>790</xPos>
-            <yPos>4720</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>625</parentX>
-            <parentY>4730</parentY>
+            <xPos>525</xPos>
+            <yPos>3157</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>415</parentX>
+            <parentY>3163</parentY>
             <parentType>1</parentType>
             <childIndices>161</childIndices>
             <childIndices>166</childIndices>
@@ -4267,12 +4267,12 @@
         <Node>
             <type>1</type>
             <name>CSF +</name>
-            <xPos>975</xPos>
-            <yPos>4630</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4730</parentY>
+            <xPos>650</xPos>
+            <yPos>3097</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>3163</parentY>
             <parentType>1</parentType>
             <childIndices>162</childIndices>
             <childIndices>163</childIndices>
@@ -4292,12 +4292,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>4585</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4640</parentY>
+            <xPos>772</xPos>
+            <yPos>3067</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>3103</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -4315,12 +4315,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>4675</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4640</parentY>
+            <xPos>772</xPos>
+            <yPos>3129</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>3103</parentY>
             <parentType>1</parentType>
             <childIndices>164</childIndices>
             <childIndices>165</childIndices>
@@ -4340,12 +4340,12 @@
         <Node>
             <type>2</type>
             <name>Neurocognitive Disability</name>
-            <xPos>1345</xPos>
-            <yPos>4645</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4685</parentY>
+            <xPos>897</xPos>
+            <yPos>3108</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3135</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -4363,12 +4363,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequlae</name>
-            <xPos>1345</xPos>
-            <yPos>4705</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4685</parentY>
+            <xPos>897</xPos>
+            <yPos>3149</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3135</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -4386,12 +4386,12 @@
         <Node>
             <type>1</type>
             <name>CSF -</name>
-            <xPos>975</xPos>
-            <yPos>4810</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>810</parentX>
-            <parentY>4730</parentY>
+            <xPos>650</xPos>
+            <yPos>3217</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>538</parentX>
+            <parentY>3163</parentY>
             <parentType>1</parentType>
             <childIndices>167</childIndices>
             <childIndices>168</childIndices>
@@ -4411,12 +4411,12 @@
         <Node>
             <type>2</type>
             <name>Death</name>
-            <xPos>1160</xPos>
-            <yPos>4765</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4820</parentY>
+            <xPos>772</xPos>
+            <yPos>3188</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>3223</parentY>
             <parentType>1</parentType>
             <level>6</level>
             <hasCost>false</hasCost>
@@ -4434,12 +4434,12 @@
         <Node>
             <type>1</type>
             <name>Discharged Home</name>
-            <xPos>1160</xPos>
-            <yPos>4855</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>995</parentX>
-            <parentY>4820</parentY>
+            <xPos>772</xPos>
+            <yPos>3248</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>663</parentX>
+            <parentY>3223</parentY>
             <parentType>1</parentType>
             <childIndices>169</childIndices>
             <childIndices>170</childIndices>
@@ -4459,12 +4459,12 @@
         <Node>
             <type>2</type>
             <name>Ototoxicity</name>
-            <xPos>1345</xPos>
-            <yPos>4825</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4865</parentY>
+            <xPos>897</xPos>
+            <yPos>3229</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3254</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
@@ -4482,12 +4482,12 @@
         <Node>
             <type>2</type>
             <name>No Long Term Sequelae</name>
-            <xPos>1345</xPos>
-            <yPos>4885</yPos>
-            <width>20</width>
-            <height>20</height>
-            <parentX>1180</parentX>
-            <parentY>4865</parentY>
+            <xPos>897</xPos>
+            <yPos>3268</yPos>
+            <width>13</width>
+            <height>13</height>
+            <parentX>785</parentX>
+            <parentY>3254</parentY>
             <parentType>1</parentType>
             <level>7</level>
             <hasCost>false</hasCost>
