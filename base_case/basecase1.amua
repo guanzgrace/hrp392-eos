@@ -7,7 +7,7 @@
         <dateCreated>Thu Oct 29 13:29:03 PDT 2020</dateCreated>
         <versionCreated>0.3.0</versionCreated>
         <modifier>graceguan</modifier>
-        <dateModified>Thu Oct 29 21:17:52 PDT 2020</dateModified>
+        <dateModified>Thu Nov 05 17:19:16 PST 2020</dateModified>
         <versionModified>0.3.0</versionModified>
     </Metadata>
     <DimInfo>
@@ -18,15 +18,15 @@
         <dimSymbols>QALY</dimSymbols>
         <dimSymbols>LY</dimSymbols>
         <decimals>4</decimals>
-        <decimals>2</decimals>
-        <decimals>2</decimals>
+        <decimals>4</decimals>
+        <decimals>4</decimals>
         <analysisType>1</analysisType>
         <objective>0</objective>
         <objectiveDim>0</objectiveDim>
         <costDim>0</costDim>
         <effectDim>1</effectDim>
-        <WTP>5.0E7</WTP>
-        <baseScenario>Strategy 1</baseScenario>
+        <WTP>50000.0</WTP>
+        <baseScenario>Strategy 2</baseScenario>
         <extendedDim>0</extendedDim>
     </DimInfo>
     <scale>100</scale>
@@ -35,66 +35,92 @@
         <name>pSepsis1</name>
         <expression>8/416</expression>
         <notes></notes>
+        <sensMin>0.01</sensMin>
+        <sensMax>0.025</sensMax>
     </Parameter>
     <Parameter>
         <name>pChorio</name>
         <expression>0.04</expression>
         <notes></notes>
+        <sensMin>0.02</sensMin>
+        <sensMax>0.11</sensMax>
     </Parameter>
     <Parameter>
         <name>pSepsis1c</name>
         <expression>8/1235</expression>
         <notes></notes>
+        <sensMin>0.004</sensMin>
+        <sensMax>0.008</sensMax>
     </Parameter>
     <Parameter>
         <name>pSepsis2Red</name>
         <expression>213/24929</expression>
         <notes></notes>
+        <sensMin>0.006</sensMin>
+        <sensMax>0.01</sensMax>
     </Parameter>
     <Parameter>
         <name>pSepsis2YellowBCPos</name>
         <expression>82/(67489*pIllAppearingBCPosYellow)</expression>
         <notes></notes>
+        <sensMin>0.006</sensMin>
+        <sensMax>0.01</sensMax>
     </Parameter>
     <Parameter>
         <name>pIllAppearingBCPosYellow</name>
         <expression>8/52</expression>
         <notes></notes>
+        <sensMin>0.13</sensMin>
+        <sensMax>0.17</sensMax>
     </Parameter>
     <Parameter>
         <name>pIllAppearingGreen</name>
         <expression>9/624</expression>
         <notes></notes>
+        <sensMin>0.001</sensMin>
+        <sensMax>0.02</sensMax>
     </Parameter>
     <Parameter>
         <name>pIllAppearingNoChorio</name>
         <expression>416/7745</expression>
         <notes></notes>
+        <sensMin>0.03</sensMin>
+        <sensMax>0.07</sensMax>
     </Parameter>
     <Parameter>
         <name>pIllAppearingStrat3</name>
         <expression>0.051</expression>
         <notes></notes>
+        <sensMin>0.03</sensMin>
+        <sensMax>0.07</sensMax>
     </Parameter>
     <Parameter>
         <name>pSepsis3</name>
         <expression>5/(4577*pIllAppearingStrat3)</expression>
         <notes></notes>
+        <sensMin>0.01</sensMin>
+        <sensMax>0.03</sensMax>
     </Parameter>
     <Parameter>
         <name>pSepsis2Green</name>
         <expression>55/(515596*pIllAppearingGreen)</expression>
         <notes></notes>
+        <sensMin>0.006</sensMin>
+        <sensMax>0.01</sensMax>
     </Parameter>
     <Parameter>
         <name>pYellow</name>
         <expression>0.111</expression>
         <notes></notes>
+        <sensMin>0.09</sensMin>
+        <sensMax>0.13</sensMax>
     </Parameter>
     <Parameter>
         <name>pRed</name>
         <expression>0.041</expression>
         <notes></notes>
+        <sensMin>0.02</sensMin>
+        <sensMax>0.06</sensMax>
     </Parameter>
     <Parameter>
         <name>scale2</name>
@@ -128,8 +154,10 @@
     </Parameter>
     <Parameter>
         <name>IncidenceEOS</name>
-        <expression>1.25</expression>
+        <expression>1.09</expression>
         <notes></notes>
+        <sensMin>0.2</sensMin>
+        <sensMax>4</sensMax>
     </Parameter>
     <Parameter>
         <name>scale1</name>
@@ -150,91 +178,125 @@
         <name>pReadmission</name>
         <expression>0.000053</expression>
         <notes>Probability of readmission within 7 days for sepsis</notes>
+        <sensMin>0.000019</sensMin>
+        <sensMax>0.000053</sensMax>
     </Parameter>
     <Parameter>
         <name>pDeathAfterReadmission</name>
         <expression>0.001170</expression>
         <notes></notes>
+        <sensMin>0</sensMin>
+        <sensMax>0.0023</sensMax>
     </Parameter>
     <Parameter>
         <name>pLTSAfterReadmission</name>
-        <expression>0.014</expression>
+        <expression>0.001600</expression>
         <notes></notes>
+        <sensMin>0.00097</sensMin>
+        <sensMax>0.001</sensMax>
     </Parameter>
     <Parameter>
         <name>pOtotoxicity</name>
         <expression>0.014</expression>
         <notes></notes>
+        <sensMin>0.005</sensMin>
+        <sensMax>0.023</sensMax>
     </Parameter>
     <Parameter>
         <name>pLTSCSFPos</name>
         <expression>0.19</expression>
         <notes></notes>
+        <sensMin>0.17</sensMin>
+        <sensMax>0.235</sensMax>
     </Parameter>
     <Parameter>
         <name>pCSFPosDeath</name>
         <expression>0.04</expression>
         <notes></notes>
+        <sensMin>0.0293</sensMin>
+        <sensMax>0.071</sensMax>
     </Parameter>
     <Parameter>
         <name>pCSFNegDeath</name>
         <expression>0.0311</expression>
         <notes></notes>
+        <sensMin>0.016</sensMin>
+        <sensMax>0.0462</sensMax>
     </Parameter>
     <Parameter>
         <name>pCSFPos</name>
         <expression>0.02</expression>
         <notes></notes>
+        <sensMin>0.013</sensMin>
+        <sensMax>0.098</sensMax>
     </Parameter>
     <Parameter>
         <name>cLevel1NurseryAdmissionPerDay</name>
-        <expression>1171.75</expression>
+        <expression>1090</expression>
         <notes></notes>
+        <sensMin>436</sensMin>
+        <sensMax>1308</sensMax>
     </Parameter>
     <Parameter>
         <name>cLevel1NursingCarePerDay</name>
         <expression>500</expression>
         <notes></notes>
+        <sensMin>200</sensMin>
+        <sensMax>600</sensMax>
     </Parameter>
     <Parameter>
         <name>cLevel2NICUAdmissionPerDay</name>
-        <expression>5109.25</expression>
+        <expression>4753</expression>
         <notes></notes>
+        <sensMin>1901</sensMin>
+        <sensMax>5703</sensMax>
     </Parameter>
     <Parameter>
         <name>cLevel2NursingCarePerDay</name>
         <expression>600</expression>
         <notes></notes>
+        <sensMin>240</sensMin>
+        <sensMax>720</sensMax>
     </Parameter>
     <Parameter>
         <name>cGentamicin1</name>
-        <expression>34.25</expression>
+        <expression>32</expression>
         <notes></notes>
+        <sensMin>13</sensMin>
+        <sensMax>38</sensMax>
     </Parameter>
     <Parameter>
         <name>cAmpicillin1</name>
-        <expression>99.68</expression>
+        <expression>93</expression>
         <notes></notes>
+        <sensMin>37</sensMin>
+        <sensMax>111</sensMax>
     </Parameter>
     <Parameter>
         <name>cInitialNICUTests</name>
-        <expression>1137</expression>
+        <expression>1058</expression>
         <notes></notes>
+        <sensMin>454</sensMin>
+        <sensMax>1364</sensMax>
     </Parameter>
     <Parameter>
         <name>cBloodCulture1</name>
-        <expression>287</expression>
+        <expression>267</expression>
         <notes></notes>
+        <sensMin>107</sensMin>
+        <sensMax>320</sensMax>
     </Parameter>
     <Parameter>
-        <name>cCSF</name>
-        <expression>174</expression>
+        <name>cCSFNeg</name>
+        <expression>cCSF+7*(cLevel2NICUAdmissionPerDay+cLevel2NursingCarePerDay)</expression>
         <notes></notes>
     </Parameter>
     <Parameter>
         <name>cReadmission</name>
         <expression>5093</expression>
         <notes></notes>
+        <sensMin>428</sensMin>
+        <sensMax>35593</sensMax>
     </Parameter>
     <Parameter>
         <name>qNLTS</name>
@@ -248,13 +310,17 @@
     </Parameter>
     <Parameter>
         <name>qNCD</name>
-        <expression>48</expression>
+        <expression>53.6</expression>
         <notes></notes>
+        <sensMin>24</sensMin>
+        <sensMax>60</sensMax>
     </Parameter>
     <Parameter>
         <name>qOtotoxicity</name>
-        <expression>64</expression>
+        <expression>65.6</expression>
         <notes></notes>
+        <sensMin>53.52</sensMin>
+        <sensMax>69.68</sensMax>
     </Parameter>
     <Parameter>
         <name>c2DayNursery</name>
@@ -285,25 +351,52 @@
         <name>cDeath</name>
         <expression>9653532</expression>
         <notes></notes>
+        <sensMin>5516304</sensMin>
+        <sensMax>13790761</sensMax>
     </Parameter>
     <Parameter>
         <name>cNCD</name>
         <expression>1087960</expression>
         <notes></notes>
+        <sensMin>828688</sensMin>
+        <sensMax>1619117</sensMax>
     </Parameter>
     <Parameter>
         <name>cOtotoxicity</name>
         <expression>393151</expression>
         <notes></notes>
+        <sensMin>42366</sensMin>
+        <sensMax>828688</sensMax>
     </Parameter>
     <Parameter>
         <name>c2DayNursery31</name>
         <expression>2*(cLevel1NurseryAdmissionPerDay+(4/3)*cLevel1NursingCarePerDay)</expression>
         <notes></notes>
     </Parameter>
+    <Parameter>
+        <name>cImplementation2</name>
+        <expression>0</expression>
+        <notes></notes>
+        <sensMin>0</sensMin>
+        <sensMax>1000</sensMax>
+    </Parameter>
+    <Parameter>
+        <name>cImplementation3</name>
+        <expression>0</expression>
+        <notes></notes>
+        <sensMin>0</sensMin>
+        <sensMax>1000</sensMax>
+    </Parameter>
+    <Parameter>
+        <name>cCSF</name>
+        <expression>162</expression>
+        <notes></notes>
+        <sensMin>65</sensMin>
+        <sensMax>194</sensMax>
+    </Parameter>
     <simParamSets>false</simParamSets>
     <simType>0</simType>
-    <cohortSize>1000000</cohortSize>
+    <cohortSize>4500</cohortSize>
     <CRN>false</CRN>
     <crnSeed>-1</crnSeed>
     <displayIndResults>false</displayIndResults>
@@ -328,8 +421,6 @@
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
-            <cost>0</cost>
-            <cost>0</cost>
             <payoff>0</payoff>
             <payoff>0</payoff>
             <payoff>0</payoff>
@@ -378,7 +469,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>0</prob>
-            <cost>450</cost>
+            <cost>cImplementation2</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -398,12 +489,12 @@
             <childIndices>5</childIndices>
             <childIndices>6</childIndices>
             <level>2</level>
-            <hasCost>false</hasCost>
+            <hasCost>true</hasCost>
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>0</cost>
+            <cost>c2DayNursery</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -452,7 +543,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>c2DayNursery</cost>
+            <cost>0</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -497,12 +588,12 @@
             <childIndices>10</childIndices>
             <childIndices>11</childIndices>
             <level>2</level>
-            <hasCost>false</hasCost>
+            <hasCost>true</hasCost>
             <hasVarUpdates>false</hasVarUpdates>
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>0</cost>
+            <cost>c2DayNursery</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -527,7 +618,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>pYellow</prob>
-            <cost>cBloodCulture1</cost>
+            <cost>cBloodCulture1+c2DayNursery</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -576,7 +667,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>c2DayNursery31</cost>
+            <cost>0</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -625,7 +716,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>c2DayNursery31</cost>
+            <cost>0</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -746,7 +837,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>pSepsis1cScaled</prob>
-            <cost>0</cost>
+            <cost>c7DayNICU</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -1323,7 +1414,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -2778,7 +2869,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -3041,7 +3132,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -3304,7 +3395,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -3567,7 +3658,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -3686,7 +3777,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>0</prob>
-            <cost>400</cost>
+            <cost>c2DayNursery31+cImplementation3</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -3710,7 +3801,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>c2DayNursery31</cost>
+            <cost>0</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
@@ -4310,7 +4401,7 @@
             <visible>true</visible>
             <collapsed>false</collapsed>
             <prob>C</prob>
-            <cost>cCSF</cost>
+            <cost>cCSFNeg</cost>
             <cost>0</cost>
             <cost>0</cost>
             <payoff>0</payoff>
